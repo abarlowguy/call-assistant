@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Call Assistant</title>
+  <link rel="stylesheet" href="/ui/styles.css">
+</head>
+<body>
+  <header>
+    <div class="status-dot" id="status-dot"></div>
+    <h1>Call Assistant</h1>
+    <span id="session-timer" style="color:#666;font-size:12px;margin-left:auto"></span>
+  </header>
+
+  <div class="controls">
+    <button class="btn-start" id="btn-start">Start Listening</button>
+    <button class="btn-stop" id="btn-stop" disabled>Stop</button>
+    <button class="btn-load" id="btn-load">Load Project</button>
+    <span class="none" id="project-label">No project loaded</span>
+  </div>
+
+  <div class="panels">
+    <div class="panel" style="flex:1.2">
+      <div class="panel-header">Live Transcript</div>
+      <div class="panel-body" id="transcript-panel"></div>
+    </div>
+    <div class="panel" style="flex:2">
+      <div class="panel-header">Live Intelligence</div>
+      <div class="panel-body" id="intelligence-panel"></div>
+    </div>
+  </div>
+
+  <script src="/ui/app.js"></script>
+</body>
+</html>
